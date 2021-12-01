@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin:0;
+    padding:0;
+    
+}
+h1{
+    font-style: bold;
+}
+body{
+    background-image: linear-gradient(to bottom,rgb(218, 96, 116),rgb(124, 15, 110));
+    display: flex;
+}
+/*.dice{
+    width:100px;
+    height: 100px;
+    top:30%;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    
+    
+}*/
+.btn{
+
+    cursor: pointer;/* on hover get the hands*/
+    border-radius: 90px;
+    border:none;
+    padding:10px 20px;
+    font-size: 20px;
+    position: absolute;
+    
+    left:50%;
+    transform: translateX(-50%);
+}
+.container{
+    margin: 2% 10%; 
+    /*border : 10px solid blue;*/
+    background-color: rgb(88, 12, 40);
+    display: flex;
+    width: 100rem;
+  height: 40rem;
+  position:relative;
+  
+
+}
+.player{
+    text-transform: uppercase;
+    font-size: 2em;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+   
+
+}
+.curr{
+    flex:10%;
+   /* border:3px solid blue;*/
+    flex-direction: column;
+    padding: 10%;
+    position: relative;
+}
+.crr{
+    
+    border:10 px solid black;
+    width:60%;
+    /*height:400px;*/
+    position: absolute;
+    top: 60%;
+    text-transform: uppercase;
+    position: relative;
+    background-color: #c7365f;
+    border-radius: 10px;
+    padding:20px 40px; 
+    color: white;
+    height:70px;
+    
+    
+}
+
+.container > section{
+    /*flex-wrap: wrap;
+    margin:30px 30px;
+    padding:20px;*/  
+    /*position: absolute;
+    top:10%;
+    left:20%;*/
+    flex:50%;   
+    padding:30px;   
+   
+}
+.col0{    
+    /*display :flex;
+    flex-direction: column;*/
+    align-items: center;
+    background-color: rgb(245, 187, 206); 
+    display: flex; 
+    flex-direction: column;
+    
+}
+.col1{  
+    background-color: rgb(233, 116, 155);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;  
+    
+   
+    /*flex:1;*/
+}
+/*.score{
+    background-color: #c7365f;
+    border-radius: 10px;
+}*/
+.score-value{
+    margin:10px;
+    color:crimson;
+    font-size: 4rem;
+    
+}
+/*.current{
+    /*background-color: #c7365f;
+    border-radius: 10px;
+    padding:30px 40px; 
+    color: white;
+    line-height: 10px;*/
+   /* left:25%;
+    position: absolute;
+}*/
+
+
+.current-value{
+    color: white;
+   
+    position: absolute;
+    
+    left:40%;
+    margin:10%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+.Hold{
+    top:80%;
+}
+.Roll-Dice{
+    top:70%;
+
+}
+.btn:active{
+    transform: translate(-50%,3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.New-Game{
+    top:10%;
+}
+.dice-img{
+    top:30%;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 10rem;
+}
+.hidden{
+    display: none;
+}
+.player--active{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.player--winner{
+    background-color: rgb(132, 204, 60);
+}
+
